@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222831;
+    
+}
+
+#layout {
+    padding: 10px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.desafio {
+    width: 100%;
+    height: 100px;
+    background-color: #555;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+/* Desafio 1 */
+.btn {
+    background-color: #C95792;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #7C4585;
+    transform: translateY(-5px);
+}
+
+/* Desafio 2 */
+.desafio p {
+    font-size: 1.4rem;
+    width: 380px;
+    margin-top: 10px;
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #c46ed1;
+}
+
+@keyframes typing {
+    from {
+       width: 0; 
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Desafio 3 */
+.container-loader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #5f164f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+/* Desafio 4 */
+.desafio-4 {
+    width: 100%;
+    height: 200px;
+    background-color: #555;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+.container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 125px;
+    perspective: 1000px;
+    border-radius: 25%;
+  }
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+.flip-card-front {
+    background-color: #2980b9;
+    color: rgb(255, 255, 255);
+  }
+
+.flip-card-front h2 {
+    margin-top: 35px;
+  }
+
+.flip-card-back {
+    background-color: #dd2dd4;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.flip-card-back h2 {
+    margin-top: 35px;
+    font-size: 1.8rem;
+  }
+
+ p {
+    font-size: 1.2rem;
+  }
